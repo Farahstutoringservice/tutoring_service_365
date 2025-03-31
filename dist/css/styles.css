@@ -641,6 +641,11 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+body {
+  background-image: url('assets/img.jpg');
+  background-size: cover;
+}
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
