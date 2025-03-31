@@ -90,6 +90,10 @@
     scroll-behavior: smooth;
   }
 }
+.fa-stack img {
+    width: 70px; /* Adjust as needed */
+    height: auto;
+}
 
 body {
   margin: 0;
