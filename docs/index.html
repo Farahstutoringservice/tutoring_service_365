@@ -33,10 +33,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#subjects">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -512,14 +511,48 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+         <!-- Contact Section (Form Integrated) -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to start learnig today, feel free to reach out!</p>
+    
+    <!-- Contact Form -->
+    <div class="form-container">
+      <!-- Form with updated action to Formspree -->
+      <form action="https://formspree.io/f/xwpvynjv" method="POST" id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <!-- Email input field -->
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <!-- Added phone input -->
+        <div class="form-group">
+          <label for="phone">Your Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="form-messages">
+        <div class="success-message" style="display:none;">Your message has been sent successfully!</div>
+        <div class="error-message" style="display:none;">Oops! Something went wrong. Please try again.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Fara's Tutoring Services | All Rights Reserved</p>
+  </footer>
+</body>
 </html>
