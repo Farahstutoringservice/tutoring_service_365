@@ -10974,7 +10974,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
+  color: #ffd700; /* Gold-ish yellow */
+
   background-image: url("../assets/img/school2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
